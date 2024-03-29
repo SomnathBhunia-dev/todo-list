@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.input-note {
+  display: block;
+  width: 70%; 
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  outline: none; 
+  transition: all 0.2s ease-in-out; 
+}
+
+.input-note:focus {
+  border-color: #999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.add-note {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#add-note-btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+#add-note-btn:hover {
+    background-color: aquamarine;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#notes-list li:nth-child(even) {
+    background: #76a367;
+    color: white;
+}
+
+.note {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-content {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+    width: 90%;
+    white-space: wrap;
+  word-break: break-word; /* Allow breaking words at hyphenation points */
+}
+
+.del-btn {
+    cursor: pointer;
+    color: #aaa;
+    height: fit-content;
+}
+
+.del-btn:hover {
+    color: #333;
+}
